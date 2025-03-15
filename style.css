@@ -64,6 +64,31 @@ header {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 768px) {
+    /* Adjust font sizes, margins, paddings */
+    body {
+        font-size: 14px;
+    }
+
+    /* Adjust image sizes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Fix navigation */
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Make grid layouts adjust */
+    .product-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 #filters h2 {
     margin-top: 0;
