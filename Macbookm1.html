@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mackbook M2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading"><u>Amazon Clone</u></h1>
+        <p id="description"><i>This is an e-commerce website clone</i></p>
+        <nav id="panel">
+            <a class="active" href="index.html">Home</a>
+            <a class="active" href="mobile.html">Mobile phones</a>
+            <a class="active" href="laptops.html">Laptops</a>
+            <a class="active" href="tablets.html">Tablets</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0</p>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+
+    </main>
+
+    <main>
+        <div class="OnePlusContainer">
+            <div class="Photos">
+                <img src="Pictures\MackbiikM1\m1a.jpg" alt="">
+                <img src="Pictures\MackbiikM1\m1b.jpg" alt="">
+                <img src="Pictures\MackbiikM1\m1c.jpg" alt="">
+                <img src="Pictures\MackbiikM1\m1d.jpg" alt="">
+                <img src="Pictures\MackbiikM1\m1e.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <button class="PhotosButtonRight" onclick="goPrev()">←</button>
+    <button class="PhotosButtonLeft" onclick="goNext()">→</button>
+
+    <div class="ProductDetails">
+        <p id="heading"><b>Apple MacBook Air Laptop with M2 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 512GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone/iPad; Space Grey
+        </b></p><br>
+        <a id="link"
+            href="https://www.apple.com/in/iphone/?afid=p238%7CsEWG126or-dc_mtid_209254ho67063_pcrid_733842189082_pgrid_127298783956_pexid__ptid_kwd-489425687752_&cid=wwa-in-kwgo-iphone-slid----Avail-">Visit Apple Store</a>
+
+        <button id="SavingButton">Save For Later</button>
+        <hr class="line">
+
+        <div class="pricebox">
+            <span id="Price"><b>1,04,990</b></span>
+            <span id="PriceDrop">~6%</span>
+        </div>
+
+        <button class="cartButton" onclick="event.stopPropagation(); addToCart('ASUS TUF Gaming F15', 104990)">Add to
+            Cart</button>
+        <label for="quantity">quantity</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <hr>
+        <div>
+            <h2><b><u> Product Details</u></b> </h2>
+        </div>
+
+    </div>
+
+    
+
+    <div class="container2">
+    
+        <div class="section-header" onclick="toggleDetails()">
+            <span>Top highlights</span>
+            <span class="arrow">▾</span>
+        </div>
+    
+        <div class="product-details" id="details">
+            <div class="detail-item">
+                <span class="label">Brand</span>
+                <span class="value">ASUS</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Operating System</span>
+                <span class="value">Windows</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Memory Storage Capacity</span>
+                <span class="value">256 GB</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Screen Size</span>
+                <span class="value">17 Inches</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2><b><u>About the Product:</u></b></h2>
+        <ul>
+            <li><b>rocessor: </b>13th Gen Intel Core i7-13620H Processor 2.4 GHz (24M Cache, up to 4.9 GHz, 10 cores: 6 P-cores and 4 E-cores) High Performance and Multitasking</li>
+            
+            <li><b>Memory:</b> 16GB DDR5 SO-DIMM with | Storage: 512GB PCIe 4.0 NVMe M.2 SSD
+                Graphics: NVIDIA Dedicated GeForce RTX 4060 Laptop GPU 8GB GDD VRAM</li>
+            
+            <li>Play over 100 high-quality PC games, plus new and upcoming blockbusters on day one like Halo Infinite, Forza Horizon 5, and Age of Empires IV with your new FA507RM-HF030WS and one month of Game Pass-including EA Play.</li>
+            
+            <li>With new games added all the time, there’s always something new to play. Age of Empires IV, Back 4 Blood, Battlefield V, Forza Horizon 5, Halo Infinite*, Knockout City, Microsoft Flight Simulator, Minecraft PC Bundle, Need for Speed Heat, Psychonauts2, The Sims 4, Titanfall 2, 12 Minutes</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

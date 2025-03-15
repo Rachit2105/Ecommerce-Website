@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo Tab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading"><u>Amazon Clone</u></h1>
+        <p id="description"><i>This is an e-commerce website clone</i></p>
+        <nav id="panel">
+            <a class="active" href="index.html">Home</a>
+            <a class="active" href="mobile.html">Mobile phones</a>
+            <a class="active" href="laptops.html">Laptops</a>
+            <a class="active" href="tablets.html">Tablets</a>
+        </nav>
+    </header>
+    <main>
+        <div class="OnePlusContainer">
+            <div class="Photos">
+                <img src="Pictures\lenovoTab\LenovoTaba.jpg" alt="">
+                <img src="Pictures\lenovoTab\LenovoTabb.jpg" alt="">
+                <img src="Pictures\lenovoTab\LenovoTabc.jpg" alt="">
+                <img src="Pictures\lenovoTab\LenovoTabd.jpg" alt="">
+                <img src="Pictures\lenovoTab\LenovoTabe.jpg" alt="">
+                <img src="Pictures\lenovoTab\LenovoTabf.jpg" alt="">
+                
+            </div>
+        </div>
+    </main>
+    <button class="PhotosButtonRight" onclick="goPrev()">←</button>
+    <button class="PhotosButtonLeft" onclick="goNext()">→</button>
+
+    <main>
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0</p>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+
+    </main>
+
+    <div class="ProductDetails">
+        <p id="heading"><b>Lenovo Tab M11 with Pen| 4G (LTE) + Wi-Fi | 8 GB RAM, 128 GB ROM (Expandable Upto 1 TB)| 11 Inch Screen, 90 Hz Refresh Rate| Quad Speaker with Dolby Atmos| 13 MP Rear Camera| Google Kids Space</b></p><br>
+        <a id="link"
+            href="https://www.lenovo.com/in/en/d/deals/?gclid=Cj0KCQjwytS-BhCKARIsAMGJyzrsQS6_9Sx3mydH47xhBmE6uyy3qBqlaGS1Y_Qh_D5rWRmX9qHIjNgaArP1EALw_wcB&sortBy=priceUp&visibleDatas=4353%3ALaptops%3B4376%3ALOQ%2CLegion%2CIdeaPad%2CYoga&cid=in:sem:3vtp7d&gad_source=1&s_kwcid=AL!8093!3!677519771904!e!!g!!lenovo&ef_id=Z2BvogAMFN_KrgAZ:20250315200422:s">Visit Lenovo Store</a>
+
+        <button id="SavingButton">Save For Later</button>
+        <hr class="line">
+
+        <div>
+            <span id="Price"><b>₹29,999</b></span>
+            <span id="PriceDrop">~6%</span>
+
+        </div>
+
+        <button class="cartButton" onclick="event.stopPropagation(); addToCart('Samsung Galaxy S25 Ultra', 129999)">Add to Cart</button>
+
+        <label for="quantity">quantity</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <hr>
+        <div>
+            <h2><b><u> Product Details</u></b> </h2>
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="title">Product details</div>
+    
+        <div class="section-header" onclick="toggleDetails()">
+            <span>Top highlights</span>
+            <span class="arrow">▾</span>
+        </div>
+    
+        <div class="product-details" id="details">
+            <div class="detail-item">
+                <span class="label">Brand</span>
+                <span class="value">Samsung</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Operating System</span>
+                <span class="value">Android 15</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">RAM Memory Installed Size</span>
+                <span class="value">16 GB</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">CPU Model</span>
+                <span class="value">Snapdragon 8 Gen 3</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">CPU Speed</span>
+                <span class="value">4.47 GHz</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2><b><u>About the Product:</u></b></h2>
+        <ul>
+            <li>Meet Galaxy S25 Ultra, your true AI companion. Powered by the next chapter of Galaxy AI with multi-modality, and the most advanced Galaxy fundamentals, Galaxy S25 Ultra naturally adapts to you: learning your patterns, anticipating your needs, and connecting your world seamlessly. With Now Brief, it also offers you personalized insights to get you through your day.</li>
+            
+            <li>Need to do multiple tasks? Galaxy S25 Ultra performs seamless actions across apps and will get them done for you instantly</li>
+            
+            <li>Live to create? Galaxy S25 Ultra’s cutting-edge camera and visual creation tools offer you the best camera and editing experience, thanks to its most advanced AI ProVisual Engine. Go from Wide to Tele and even Ultra Wide and get the sharpest details.</li>
+            
+            <li>Love gaming? Enjoy hyper-realistic, ultra-smooth gameplay with the most powerful processor, customized for Galaxy - Snapdragon 8 Elite.</li>
+            
+            <li>All this shielded in an Ultra-strong titanium frame with Galaxy’s toughest glass ever, Corning Gorilla Armor 2.</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePlus12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading"><u>Amazon Clone</u></h1>
+        <p id="description"><i>This is an e-commerce website clone</i></p>
+        <nav id="panel">
+            <a class="active" href="index.html">Home</a>
+            <a class="active" href="mobile.html">Mobile phones</a>
+            <a class="active" href="laptops.html">Laptops</a>
+            <a class="active" href="tablets.html">Tablets</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="OnePlusContainer">
+            <div class="Photos">
+                <img src="Pictures\OnePlus12\oneplus12a.webp" alt="">
+                <img src="Pictures\OnePlus12\oneplus12b.jpg" alt="">
+                <img src="Pictures\OnePlus12\oneplus12c.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+    <button class="PhotosButtonRight" onclick="goPrev()">←</button>
+    <button class="PhotosButtonLeft" onclick="goNext()">→</button>
+
+    <div class="ProductDetails">
+        <p id="heading"><b>OnePlus 12 | Smarter with OnePlus AI (12GB RAM, 256GB Storage Nebula Noir)</b></p><br>
+        <a id="link"
+            href="https://www.oneplus.in/store?utm_source=google&utm_medium=cpc&utm_campaign=search_oneplus_13_OnePlus-Publicis-IN_EN-Brand-Sustain-All-CPC-Search_Exact-20240914--Intent-Conversions&gad_source=1&gclid=Cj0KCQjw4cS-BhDGARIsABg4_J3g53k2No4pg2D2N5gTiJu1ZSpZgIbWIrC6EppZ--vwwSE1lJgEKiQaAtYbEALw_wcB">Visit
+            OnePlus Store</a>
+
+        <button id="SavingButton">Save For Later</button>
+        <hr class="line">
+
+        <div class="pricebox">
+            <span id="Price"><b>₹30,050</b></span>
+            <span id="PriceDrop">~4%</span>
+
+        </div>
+
+        <button class="cartButton" onclick="event.stopPropagation(); addToCart('OnePlus 12', 30050)">Add to
+            Cart</button>
+        <label for="quantity">quantity</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <hr>
+        <div>
+            <h2><b><u> Product Details</u></b></h2>
+        </div>
+    </div>
+
+    <main>
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0</p>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+
+    </main>
+
+    <div class="container2">
+        <div class="title">Product details</div>
+
+        <div class="section-header" onclick="toggleDetails()">
+            <span>Top highlights</span>
+            <span class="arrow">▾</span>
+        </div>
+
+        <div class="product-details" id="details">
+            <div class="detail-item">
+                <span class="label">Brand</span>
+                <span class="value">OnePlus</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Operating System</span>
+                <span class="value">Android 15</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">RAM Memory Installed Size</span>
+                <span class="value">16 GB</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Memory Storage Capacity</span>
+                <span class="value">12 GB</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Screen Size</span>
+                <span class="value">6.82 Inches</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2><b><u>About the Product:</u></b></h2>
+        <ul>
+            <li>Flagship power made smarter with the Snapdragon 8 Gen 3 flagship – Up to 98% faster AI, 30% faster CPU
+                compared to the OnePlus 12R. The OnePlus 13R maximizes the CPU efficiency of the Snapdragon 8 Gen 3 when
+                gaming, while lowering heat and power consumption.</li>
+
+            <li>Winning made smooth with maximum 120fps gaming experience, no input delay and zero-touch latency
+                gameplay. We've tuned the GPU pipeline to unlock near-instant 120fps HDR gaming that hits harder than
+                any highlight.</li>
+
+            <li>Our biggest battery ever – Press play all day, every day, with the cutting-edge 6000mAh battery. Driven
+                by our next-gen battery management system, your multimedia becomes an all-you-can-consume buffet.</li>
+
+            <li>Pro-grade triple camera with the latest SONY LYT-700 50MP main camera with OIS, a new 50MP telephoto
+                camera with 2x optical zoom and 4x lossless zoom, and an 8MP ultra-wide camera at 112°. Unlock DSLR-like
+                portraits with flagship algorithm.</li>
+
+            <li>OxygenOS 15 - Experience the power of all-new OnePlus AI. Search smarter, crank up your creativity, and
+                power your productivity for a smoother digital life.</li>
+
+            <li>1.5K ProXDR Display with all-new RadiantView, for a bright display even under blazing sun – certified by
+                TUV Rheinland Intelligent Eye Care with High Visibility.</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

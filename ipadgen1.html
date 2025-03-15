@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPad gen1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading"><u>Amazon Clone</u></h1>
+        <p id="description"><i>This is an e-commerce website clone</i></p>
+        <nav id="panel">
+            <a class="active" href="index.html">Home</a>
+            <a class="active" href="mobile.html">Mobile phones</a>
+            <a class="active" href="laptops.html">Laptops</a>
+            <a class="active" href="tablets.html">Tablets</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0</p>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+
+    </main>
+
+    <main>
+        <div class="OnePlusContainer">
+            <div class="Photos">
+                <img src="Pictures\iPadgen1\ipadgen1a.jpg" alt="">
+                <img src="Pictures\iPadgen1\ipadgen1b.jpg" alt="">
+                <img src="Pictures\iPadgen1\ipadgen1c.jpg" alt="">
+                <img src="Pictures\iPadgen1\ipadgen1d.jpg" alt="">
+                <img src="Pictures\iPadgen1\ipadgen1e.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <button class="PhotosButtonRight" onclick="goPrev()">←</button>
+    <button class="PhotosButtonLeft" onclick="goNext()">→</button>
+
+    <div class="ProductDetails">
+        <p id="heading"><b>Apple iPad (10th Generation): with A14 Bionic chip, 27.69 cm (10.9″) Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue</b></p><br>
+        <a id="link"
+            href="https://www.apple.com/in/iphone/?afid=p238%7CsEWG126or-dc_mtid_209254ho67063_pcrid_733842189082_pgrid_127298783956_pexid__ptid_kwd-489425687752_&cid=wwa-in-kwgo-iphone-slid----Avail-">Visit Apple Store</a>
+
+        <button id="SavingButton">Save For Later</button>
+        <hr class="line">
+
+        <div class="pricebox">
+            <span id="Price"><b>₹72000</b></span>
+            <span id="PriceDrop">~12%</span>
+
+        </div>
+
+        <button class="cartButton" onclick="event.stopPropagation(); addToCart('iPhone 15', 72000)">Add to
+            Cart</button>
+        <label for="quantity">quantity</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <hr>
+        <div>
+            <h2><b><u> Product Details</u></b> </h2>
+        </div>
+
+    </div>
+
+    
+
+    <div class="container2">
+        <div class="title">Product details</div>
+    
+        <div class="section-header" onclick="toggleDetails()">
+            <span>Top highlights</span>
+            <span class="arrow">▾</span>
+        </div>
+    
+        <div class="product-details" id="details">
+            <div class="detail-item">
+                <span class="label">Brand</span>
+                <span class="value">Apple</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Operating System</span>
+                <span class="value">iOS</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Memory Storage Capacity</span>
+                <span class="value">128 GB</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Screen Size</span>
+                <span class="value">6.7 Inches</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2><b><u>About the Product:</u></b></h2>
+        <ul>
+            <li><b>DYNAMIC ISLAND COMES TO IPHONE 15</b>— Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can see who’s calling, track your next ride, check your flight status, and so much more.</li>
+            
+            <li><b>INNOVATIVE DESIGN</b>  — iPhone 15 Plus features a durable color-infused glass and aluminum design. It’s splash, water, and dust resistant. The Ceramic Shield front is tougher than any smartphone glass. And the 6.7" Super Retina XDR display is up to 2x brighter in the sun compared to iPhone 14.</li>
+            
+            <li><b>NEXT-GENERATION PORTRAITS</b> — Capture portraits with dramatically more detail and color. Just tap to shift the focus between subjects — even after you take the shot.</li>
+            
+            <li><b>POWERHOUSE A16 BIONIC CHIP</b>  — The superfast chip powers advanced features like computational photography, fluid Dynamic Island transitions, and Voice Isolation for phone calls. And A16 Bionic is incredibly efficient to help deliver great all-day battery life.</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
